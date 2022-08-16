@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Bank Inside</title>
+</head>
+<body>
+  <header>
+    <h1 class="text-center text-5xl mt-5 font-semibold text-gray-700">Welcome to <span class="text-blue-600">Baap er Bank!!!</span></h1>
+  </header>
+
+  <main>
+    <section class="mt-12">
+      <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+        <div class="bg-green-400 p-8 text-white rounded-md">
+          <h4 class="text-2xl font-semibold">Deposit</h4>
+          <h2 class="text-5xl font-bold mt-4">$ <span id="deposit-total">00</span></h2>
+        </div>
+        <div class="bg-rose-400 p-8 text-white rounded-md">
+          <h4 class="text-2xl font-semibold">Withdrow</h4>
+          <h2 class="text-5xl font-bold mt-4">$ <span id="withdraw-total">00</span> </h2>
+        </div>
+        <div class="bg-blue-400 p-8 text-white rounded-md">
+          <h4 class="text-2xl font-semibold">Balance</h4>
+          <h2 class="text-5xl font-bold mt-4">$ <span id="balance-total">1240</span></h2>
+        </div>
+      </div>
+    </section>
+    <!-- deposit and widthdrow input  -->
+    <section class="mt-16">
+      <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+        <div class="bg-blue-400 p-8 text-white rounded-md">
+          <h4 class="text-2xl font-semibold">Please Deposit</h4>
+          <input class="py-2 pl-2 text-gray-800 w-8/12 mt-4 rounded-md" type="text" placeholder="$ Deposit Amount" id="deposit-field">
+          <button id="btn-deposit" class="bg-green-400 hover:bg-green-500 w-3/12 py-2 rounded-md font-semibold">Deposit</button>
+        </div>
+        <div class="bg-violet-400 p-8 text-white rounded-md">
+          <h4 class="text-2xl font-semibold">Please Withdrow</h4>
+          <input id="withdraw-field" class="py-2 pl-2 text-gray-800 w-8/12 mt-4 rounded-md" type="text" placeholder="$ Withdrow Amount">
+          <button id="btn-withdraw" class="bg-red-400 hover:bg-red-500 w-3/12 py-2 rounded-md font-semibold">Withdrow</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="deposit.js"></script>
+  <script src="withdraw.js"></script>
+</body>
+</html>
